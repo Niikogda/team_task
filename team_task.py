@@ -31,7 +31,7 @@ while True:
         print("Invalid input. Please enter 'yes' or 'no'.")
         special = input("Add signs (yes/no)? ").lower()
     special = special == 'yes'
-    
+
     characters = ""
     if uppercase:
         characters += string.ascii_uppercase
@@ -41,7 +41,7 @@ while True:
         characters += string.digits
     if special:
         characters += "._%$/?!"
-
+    
     if not characters:
         print("Error: Unable to create password while all categories = 'No'.")
         continue
