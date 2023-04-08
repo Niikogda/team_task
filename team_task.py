@@ -8,7 +8,6 @@ lowercase = input("Включити маленькі літери (так/ні)?
 numbers = input("Включити цифри (так/ні)? ").lower() == 'так'
 special = input("Включити знаки (так/ні)? ").lower() == 'так'
 
-# Створення списку доступних символів
 characters = ''
 if uppercase:
     characters += string.ascii_uppercase
@@ -19,3 +18,9 @@ if numbers:
 if special:
     characters += string.punctuation
     
+
+password = ''
+for i in range(length):
+    password += random.choice(characters)
+
+print("Ваш новий пароль:", password)
