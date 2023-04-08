@@ -2,11 +2,11 @@
 import random
 import string
 
-length = int(input("Введіть довжину паролю: "))
-uppercase = input("Включити великі літери (так/ні)? ").lower() == 'так'
-lowercase = input("Включити маленькі літери (так/ні)? ").lower() == 'так'
-numbers = input("Включити цифри (так/ні)? ").lower() == 'так'
-special = input("Включити знаки (так/ні)? ").lower() == 'так'
+length = int(input("Enter the password length: "))
+uppercase = input("Add capital letters (yes/no)? ").lower() == 'yes'
+lowercase = input("Add lowercase letters (yes/no)? ").lower() == 'yes'
+numbers = input("Add numbers (yes/no)? ").lower() == 'yes'
+special = input("Add signs (yes/no)? ").lower() == 'yes'
 
 characters = ''
 if uppercase:
@@ -23,4 +23,4 @@ password = ''
 for i in range(length):
     password += random.choice(characters)
 
-print("Ваш новий пароль:", password)
+print("Your password: ", password)
